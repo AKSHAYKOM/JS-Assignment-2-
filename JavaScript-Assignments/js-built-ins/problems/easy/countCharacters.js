@@ -25,11 +25,11 @@ const countCharacters = (statement) => {
     let char = statement.charAt(i);
     if (result[char]) {
       result[char]++;
-    } else {
+    } 
+    else {
       result[char] = 1;
     }
   }
   return result;
 };
 module.exports = countCharacters;
-
