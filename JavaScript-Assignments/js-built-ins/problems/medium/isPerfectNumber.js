@@ -41,6 +41,7 @@ function isPerfectNumber(num) {
 module.exports = { isPerfectNumber };
 
 
+// Alternative implementation using Array methods
 function isPerfectNumber(num) {
     return num > 1 && Array.from({length: num - 1}, (_, i) => i + 1).filter(i => num % i === 0).reduce((a, b) => a + b, 0) === num;
 }
