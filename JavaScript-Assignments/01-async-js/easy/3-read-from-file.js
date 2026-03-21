@@ -8,7 +8,7 @@
 const fs = require('fs');
 
 // Async file read
-fs.readFile('file.txt', 'utf8', function(err, data) {
+fs.readFile(`file.txt`, `utf8`, function(err, data) {
     if (err) {
         console.log("Error reading file:", err);
         return;
@@ -22,3 +22,4 @@ for (let i = 0; i < 1000000; i++) {
     sum += i;
 }
 console.log("Expensive operation done! Sum:", sum);
+

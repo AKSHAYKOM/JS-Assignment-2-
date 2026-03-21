@@ -84,5 +84,11 @@ class Calculator {
         return this;
     }
 }
+const calc = new Calculator();
+
+
+calc.add(10).multiply(3).subtract(5).getResult(); 
+calc.calculate("(10 + 5) * 2").getResult(); 
+calc.divide(0); 
 
 module.exports = Calculator;
